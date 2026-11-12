@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aceite al lugar correcto: dónde llevar tu aceite usado en Bogotá</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F6FAF6;
+  --surface: #FFFFFF;
+  --ink: #12342A;
+  --muted: #4A675D;
+  --line: #D3E2D8;
+  --green: #1E6B52;
+  --on-green: #FFFFFF;
+  --amber: #E7A00A;
+  --amber-soft: #FCEFC7;
+  --water: #2C7DA0;
+  --water-soft: #E1F0F6;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1F1A;
+    --surface: #16292A;
+    --ink: #E8F3EC;
+    --muted: #A5BFB4;
+    --line: #2A4238;
+    --green: #5BC29A;
+    --on-green: #0F1F1A;
+    --amber: #F0B429;
+    --amber-soft: #3A3010;
+    --water: #6DB6D6;
+    --water-soft: #16303A;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1F1A;
+  --surface: #16292A;
+  --ink: #E8F3EC;
+  --muted: #A5BFB4;
+  --line: #2A4238;
+  --green: #5BC29A;
+  --on-green: #0F1F1A;
+  --amber: #F0B429;
+  --amber-soft: #3A3010;
+  --water: #6DB6D6;
+  --water-soft: #16303A;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Source Sans 3", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  font-family: "Bricolage Grotesque", "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+p { margin: 0; }
+a { color: var(--green); }
+:focus-visible { outline: 3px solid var(--water); outline-offset: 3px; border-radius: 6px; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 22px; }
+.site-name { padding: 22px 0 0; font-weight: 600; color: var(--muted); font-size: 16px; }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: center; padding: 34px 0 54px; }
+.hero h1 { font-size: clamp(2.3rem, 6vw, 4rem); font-weight: 800; }
+.hero p { margin-top: 18px; font-size: 1.15rem; max-width: 34em; color: var(--muted); }
+.hero-cta { display: inline-block; margin-top: 26px; background: var(--green); color: var(--on-green); text-decoration: none; font-weight: 600; padding: 13px 22px; border-radius: 999px; }
+.hero-art { display: flex; justify-content: center; }
+.hero-art svg { width: min(230px, 60vw); height: auto; }
+
+/* Sections */
+section { padding: 8px 0 52px; }
+h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 800; }
+.lead { margin-top: 10px; color: var(--muted); max-width: 40em; }
+
+/* Steps (a real sequence) */
+.steps { list-style: none; padding: 0; margin: 26px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; counter-reset: step; }
+.steps li { counter-increment: step; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 20px 22px; }
+.steps li::before {
+  content: counter(step);
+  display: grid; place-items: center;
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--amber); color: #2A1D00;
+  font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+.steps h3 { font-size: 1.25rem; margin-bottom: 6px; }
+.steps p { color: var(--muted); font-size: 1rem; }
+
+.never { margin-top: 18px; background: var(--water-soft); border-left: 6px solid var(--water); border-radius: 10px; padding: 16px 18px; }
+.never strong { color: var(--ink); }
+
+/* Finder */
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 8px; }
+.chip {
+  font: inherit; font-weight: 600; font-size: 1rem;
+  padding: 9px 18px; border-radius: 999px; cursor: pointer;
+  border: 2px solid var(--green); background: transparent; color: var(--green);
+}
+.chip[aria-pressed="true"] { background: var(--green); color: var(--on-green); }
+.count { color: var(--muted); font-size: 1rem; margin: 6px 0 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.card h3 { font-size: 1.25rem; }
+.loc { color: var(--muted); font-size: 1rem; }
+.row { font-size: 1.02rem; }
+.row b { font-weight: 600; }
+.card a.route { margin-top: auto; align-self: flex-start; display: inline-block; text-decoration: none; font-weight: 600; padding: 9px 16px; border-radius: 999px; background: var(--amber-soft); color: var(--ink); border: 2px solid var(--amber); }
+.card a.route:hover { background: var(--amber); color: #2A1D00; }
+
+/* Before going */
+.before { background: var(--amber-soft); border: 2px solid var(--amber); border-radius: var(--radius); padding: 24px; }
+.before h2 { font-size: 1.6rem; }
+.before ul { margin: 14px 0 0; padding-left: 1.2em; }
+.before li { margin-bottom: 8px; }
+
+footer { border-top: 1px solid var(--line); padding: 26px 0 40px; color: var(--muted); font-size: 0.95rem; }
+footer p + p { margin-top: 8px; }
+
+@media (max-width: 760px) {
+  body { font-size: 17px; }
+  .hero { grid-template-columns: 1fr; padding-top: 24px; }
+  .hero-art { order: -1; }
+  .steps { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="site-name">Aceite al lugar correcto</p>
+
+  <header class="hero">
+    <div>
+      <h1>Tu aceite usado tiene un lugar. No es el desagüe.</h1>
+      <p>En Bogotá hay puntos donde puedes dejar el aceite de cocina que ya no sirve. Aquí encuentras el más cercano a tu casa, con su dirección y su horario.</p>
+      <a class="hero-cta" href="#puntos">Buscar mi punto más cercano</a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 120 224" xmlns="http://www.w3.org/2000/svg" role="img">
+        <rect x="44" y="6" width="32" height="18" rx="4" fill="var(--green)"/>
+        <rect x="48" y="24" width="24" height="22" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+        <path d="M30 62 Q30 46 48 46 H72 Q90 46 90 62 V198 Q90 214 74 214 H46 Q30 214 30 198 Z" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+        <path d="M32 92 H88 V198 Q88 212 74 212 H46 Q32 212 32 198 Z" fill="var(--amber)"/>
+        <rect x="40" y="122" width="40" height="46" rx="7" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>
+        <path d="M60 130 C54 140 52 144 52 148 A8 8 0 0 0 68 148 C68 144 66 140 60 130 Z" fill="var(--water)"/>
+        <text x="60" y="163" text-anchor="middle" font-size="9" font-family="Source Sans 3, Arial, sans-serif" fill="var(--ink)">Aceite usado</text>
+        <path d="M38 60 V190" stroke="var(--surface)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+      </svg>
+    </div>
+  </header>
+
+  <section id="pasos">
+    <h2>Cómo guardar tu aceite usado</h2>
+    <p class="lead">Son tres pasos y no necesitas nada especial: solo una botella plástica de las que ya tienes en casa.</p>
+    <ol class="steps">
+      <li>
+        <h3>Déjalo enfriar</h3>
+        <p>Espera a que el aceite esté completamente frío antes de moverlo.</p>
+      </li>
+      <li>
+        <h3>Pásalo a una botella</h3>
+        <p>Usa un embudo y una botella plástica limpia, seca y con tapa. Ciérrala bien para que no se derrame.</p>
+      </li>
+      <li>
+        <h3>Llévalo a un punto</h3>
+        <p>Guárdala hasta que se llene y llévala a uno de los puntos de recolección de este blog.</p>
+      </li>
+    </ol>
+    <p class="never"><strong>Nunca lo eches por el lavaplatos ni por el sifón.</strong> El aceite tapa las tuberías del alcantarillado y termina contaminando el agua de los ríos.</p>
+  </section>
+
+  <section id="puntos">
+    <h2>Encuentra tu punto más cercano</h2>
+    <p class="lead">Elige la zona de la ciudad donde vives o trabajas. Toca «Cómo llegar» y el mapa te muestra la ruta desde donde estás.</p>
+    <div class="chips" role="group" aria-label="Filtrar por zona" id="chips"></div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="antes">
+    <div class="before">
+      <h2>Antes de salir de casa</h2>
+      <ul>
+        <li><strong>Ve por la mañana.</strong> Algunos SuperCADE pausan la atención de 1:00 a 2:00 p. m. y todos cierran temprano.</li>
+        <li><strong>Los sábados solo abren los SuperCADE,</strong> hasta el mediodía. La sede de la Secretaría de Ambiente atiende de lunes a viernes.</li>
+        <li><strong>Lleva la botella cerrada</strong> y dentro de una bolsa, por si se llega a chorrear en el camino.</li>
+        <li><strong>Confirma que el contenedor siga ahí.</strong> Los puntos pueden cambiar; si tienes duda, pregunta en la entrada o en atención al ciudadano.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Las direcciones salen de los listados de puntos de acopio publicados por el Acueducto de Bogotá y por medios de comunicación, cruzados entre sí. Los horarios son los de atención de la Red CADE y de la Secretaría Distrital de Ambiente, y pueden cambiar.</p>
+    <p>Proyecto «Aceite al lugar correcto».</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var SUPERCADE_HORARIO = "Lunes a viernes 7:00 a. m. a 4:30 p. m. Sábados 8:00 a. m. a 12:00 m.";
+  var puntos = [
+    { nombre: "SuperCADE Suba", zona: "Norte", localidad: "Suba", dir: "Avenida Calle 145 # 103B-90", horario: SUPERCADE_HORARIO },
+    { nombre: "Secretaría Distrital de Ambiente", zona: "Centro", localidad: "Chapinero", dir: "Avenida Caracas (Carrera 14) # 54-38", horario: "Lunes a viernes 8:00 a. m. a 5:00 p. m." },
+    { nombre: "SuperCADE CAD", zona: "Centro", localidad: "Teusaquillo", dir: "Avenida Carrera 30 # 25-90", horario: SUPERCADE_HORARIO },
+    { nombre: "SuperCADE Engativá", zona: "Occidente", localidad: "Engativá", dir: "Transversal 113B # 66-54", horario: SUPERCADE_HORARIO },
+    { nombre: "SuperCADE Calle 13", zona: "Occidente", localidad: "Puente Aranda", dir: "Avenida Calle 13 # 37-35", horario: SUPERCADE_HORARIO },
+    { nombre: "SuperCADE Américas", zona: "Suroccidente", localidad: "Kennedy", dir: "Avenida Carrera 86 # 43-55 Sur", horario: SUPERCADE_HORARIO },
+    { nombre: "SuperCADE Bosa", zona: "Suroccidente", localidad: "Bosa", dir: "Avenida Calle 57R Sur # 72D-12", horario: SUPERCADE_HORARIO },
+    { nombre: "SuperCADE 20 de Julio", zona: "Suroriente", localidad: "San Cristóbal", dir: "Carrera 5A # 30D-20 Sur", horario: SUPERCADE_HORARIO }
+  ];
+  var zonas = ["Todas", "Norte", "Centro", "Occidente", "Suroccidente", "Suroriente"];
+  var actual = "Todas";
+
+  var chips = document.getElementById("chips");
+  var grid = document.getElementById("grid");
+  var count = document.getElementById("count");
+
+  function ruta(p) {
+    var destino = encodeURIComponent(p.nombre + ", " + p.dir + ", Bogotá, Colombia");
+    return "https://www.google.com/maps/dir/?api=1&destination=" + destino;
+  }
+
+  function pintarChips() {
+    chips.innerHTML = "";
+    zonas.forEach(function (z) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip";
+      b.textContent = z;
+      b.setAttribute("aria-pressed", String(z === actual));
+      b.addEventListener("click", function () { actual = z; pintarChips(); pintarPuntos(); });
+      chips.appendChild(b);
+    });
+  }
+
+  function pintarPuntos() {
+    var lista = puntos.filter(function (p) { return actual === "Todas" || p.zona === actual; });
+    count.textContent = lista.length === 1 ? "1 punto en esta zona" : lista.length + " puntos" + (actual === "Todas" ? " en Bogotá" : " en esta zona");
+    grid.innerHTML = "";
+    lista.forEach(function (p) {
+      var c = document.createElement("article");
+      c.className = "card";
+      var h = document.createElement("h3"); h.textContent = p.nombre;
+      var l = document.createElement("p"); l.className = "loc"; l.textContent = "Localidad de " + p.localidad;
+      var d = document.createElement("p"); d.className = "row"; d.innerHTML = "<b>Dirección:</b> "; d.appendChild(document.createTextNode(p.dir));
+      var t = document.createElement("p"); t.className = "row"; t.innerHTML = "<b>Horario:</b> "; t.appendChild(document.createTextNode(p.horario));
+      var a = document.createElement("a"); a.className = "route"; a.href = ruta(p); a.target = "_blank"; a.rel = "noopener noreferrer"; a.textContent = "Cómo llegar";
+      a.setAttribute("aria-label", "Cómo llegar a " + p.nombre);
+      c.appendChild(h); c.appendChild(l); c.appendChild(d); c.appendChild(t); c.appendChild(a);
+      grid.appendChild(c);
+    });
+  }
+
+  pintarChips();
+  pintarPuntos();
+})();
+</script>
+</body>
+</html>
